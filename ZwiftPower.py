@@ -179,7 +179,7 @@ class ZwiftPower:
 
         You can use this method is you want to use the session to make custom get requests.
 
-        session = ZwiftPower._auth('username', 'password')
+        session = ZwiftPower('username', 'password').session
 
         :param username: str - Zwift email
         :param password: str - Zwift password
