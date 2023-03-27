@@ -13,6 +13,7 @@ A python class that allows you to pull race event and GC standings data from Zwi
 This method is used to pull the GC results for a league series and will return three dataframe:
 the overall gc, the female gc and the team gc data. You can find the `league_id`
 in the url by clicking on an event in the "Leagues" dropdown menu on zwiftpower.com
+
 ```
 from ZwiftPowerData import ZwiftPower
 
@@ -33,6 +34,18 @@ from ZwiftPowerData import ZwiftPower
 
 zp = ZwiftPower(username='zwift_email', password='zwift_password')
 events_df = zp.league_gc_results(league_id='1234')
+```
+
+## team_roster
+This method is used to pull the team roster data from zwiftpower.com. You can get the team id from the url
+clicking on "team" -- `https://zwiftpower.com/team.php?id=`
+
+```
+from ZwiftPowerData import ZwiftPower
+
+
+zp = ZwiftPower(username='zwift_email', password='zwift_password')
+team_roster = zp.team_roster(team_id='1234')
 ```
 
 ## Custom requests

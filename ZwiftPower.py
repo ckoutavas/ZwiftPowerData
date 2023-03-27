@@ -25,6 +25,10 @@ class ZwiftPower:
 
     def league_gc_results(self, league_id: str) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         """
+        This method is used to pull the GC results for a league series and will return three dataframe:
+        the overall gc, the female gc and the team gc data. You can find the `league_id`
+        in the url by clicking on an event in the "Leagues" dropdown menu on zwiftpower.com
+
 
         :param league_id: str - The league id for the gc results
         :return: Tuple of pandas.DataFrame
@@ -85,6 +89,15 @@ class ZwiftPower:
         return gc_df, fem_gc_df, team_df
 
     def league_event_results(self, league_id) -> pd.DataFrame:
+        """
+        This method is used to pull the individual race series results across multiple events.
+        The results from all races in the event are concatenated into one DataFrame.
+        You can find the `league_id` in the url by clicking on an event in the "Leagues" dropdown menu on zwiftpower.com
+        You can see all the event results that will be returned by clicking on "events"
+
+        :param league_id: str
+        :return: pd.DataFrame
+        """
         data = self.session.get(f'https://zwiftpower.com/api3.php?do=league_event_results&id={league_id}').json()
 
         dfs = []  # empty list to append data
@@ -128,6 +141,13 @@ class ZwiftPower:
         return df
 
     def team_roster(self, team_id) -> pd.DataFrame:
+        """
+        This method is used to pull the team roster data from zwiftpower.com. You can get the team id from the url
+        clicking on "team" -- `https://zwiftpower.com/team.php?id=`
+
+        :param team_id: str
+        :return: pd.DataFrame
+        """
         team_data = self.session.get(f'https://zwiftpower.com/api3.php?do=team_riders&id={team_id}').json()
         df = pd.json_normalize(team_data['data'])
 
@@ -144,10 +164,12 @@ class ZwiftPower:
                                 ascending=True,
                                 key=lambda x: x.map(cat_sort)
                                 ).copy()
-        roster['Name'] = '<a href="https://zwiftpower.com/profile.php?z=' + roster['zwid'].astype(str) + '">' + roster[
+        roster['link'] = '<a href="https://zwiftpower.com/profile.php?z=' + roster['zwid'].astype(str) + '">' + roster[
             'name'] + '</a>'
-        roster = roster[['Name', 'flag', 'div', 'age', 'ftp', 'h_1200_wkg', 'h_15_wkg', 'h_1200_watts', 'h_15_watts']]
-        roster.columns = ['Name', 'Country', 'Grade', 'Age', 'FTP', '20m WKG', '15s WKG', '20m Power', '15s Power']
+        roster = roster[['name', 'flag', 'div', 'age', 'ftp',
+                         'h_1200_wkg', 'h_15_wkg', 'h_1200_watts', 'h_15_watts', 'link']]
+        roster.columns = ['Name', 'Country', 'Grade', 'Age', 'FTP',
+                          '20m WKG', '15s WKG', '20m Power', '15s Power', 'link']
         return roster
 
     @staticmethod
