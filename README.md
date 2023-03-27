@@ -55,7 +55,7 @@ You can make custom requests if you are familiar with `requests.Session()`
 from ZwiftPowerData import ZwiftPower
 
 
-session = ZwiftPower(username='zwift_email', password='zwift_password').session
+session = ZwiftPower._auth(username='zwift_email', password='zwift_password')
 # make whatever request you want to zwiftpower.com
 resp = session.get(...)
 ```
