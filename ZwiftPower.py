@@ -127,8 +127,8 @@ class ZwiftPower:
 
         return df
 
-    def team_roster(self) -> pd.DataFrame:
-        team_data = self.session.get('https://zwiftpower.com/api3.php?do=team_riders&id=16219').json()
+    def team_roster(self, team_id) -> pd.DataFrame:
+        team_data = self.session.get(f'https://zwiftpower.com/api3.php?do=team_riders&id={team_id}').json()
         df = pd.json_normalize(team_data['data'])
 
         div = {0: '', 5: 'A+', 10: 'A', 20: 'B', 30: 'C', 40: 'D'}
