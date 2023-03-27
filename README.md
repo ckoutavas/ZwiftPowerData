@@ -1,6 +1,5 @@
 # ZwiftPower Data
-A python class that allows you to pull race event and GC standings data from ZwiftPower
-I do not work for Zwift, ZwiftPower or any of its affliates and assume no liability.
+A python class that allows you to pull race event and GC standings data from ZwiftPower.<br>I do not work for and am not affliated Zwift, ZwiftPower or any of its affliates and assume no liability.
 
 ## Cloning the Repo and Setup
 1. Create a virtual environment: `conda create -n py_zp python=3.10`
