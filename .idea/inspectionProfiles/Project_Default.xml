@@ -1,0 +1,100 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="72">
+            <item index="0" class="java.lang.String" itemvalue="python-dateutil" />
+            <item index="1" class="java.lang.String" itemvalue="Brotli" />
+            <item index="2" class="java.lang.String" itemvalue="h11" />
+            <item index="3" class="java.lang.String" itemvalue="gspread-dataframe" />
+            <item index="4" class="java.lang.String" itemvalue="MarkupSafe" />
+            <item index="5" class="java.lang.String" itemvalue="mkl-random" />
+            <item index="6" class="java.lang.String" itemvalue="pycparser" />
+            <item index="7" class="java.lang.String" itemvalue="frozenlist" />
+            <item index="8" class="java.lang.String" itemvalue="pyasn1-modules" />
+            <item index="9" class="java.lang.String" itemvalue="trio" />
+            <item index="10" class="java.lang.String" itemvalue="oauthlib" />
+            <item index="11" class="java.lang.String" itemvalue="lxml" />
+            <item index="12" class="java.lang.String" itemvalue="soupsieve" />
+            <item index="13" class="java.lang.String" itemvalue="dash-auth" />
+            <item index="14" class="java.lang.String" itemvalue="pycountry" />
+            <item index="15" class="java.lang.String" itemvalue="beautifulsoup4" />
+            <item index="16" class="java.lang.String" itemvalue="gspread" />
+            <item index="17" class="java.lang.String" itemvalue="Werkzeug" />
+            <item index="18" class="java.lang.String" itemvalue="cryptography" />
+            <item index="19" class="java.lang.String" itemvalue="gunicorn" />
+            <item index="20" class="java.lang.String" itemvalue="click" />
+            <item index="21" class="java.lang.String" itemvalue="dash-bootstrap-components" />
+            <item index="22" class="java.lang.String" itemvalue="wsproto" />
+            <item index="23" class="java.lang.String" itemvalue="attrs" />
+            <item index="24" class="java.lang.String" itemvalue="PySocks" />
+            <item index="25" class="java.lang.String" itemvalue="charset-normalizer" />
+            <item index="26" class="java.lang.String" itemvalue="dash" />
+            <item index="27" class="java.lang.String" itemvalue="async-generator" />
+            <item index="28" class="java.lang.String" itemvalue="idna" />
+            <item index="29" class="java.lang.String" itemvalue="mkl-service" />
+            <item index="30" class="java.lang.String" itemvalue="numexpr" />
+            <item index="31" class="java.lang.String" itemvalue="Bottleneck" />
+            <item index="32" class="java.lang.String" itemvalue="PyJWT" />
+            <item index="33" class="java.lang.String" itemvalue="rsa" />
+            <item index="34" class="java.lang.String" itemvalue="brotlipy" />
+            <item index="35" class="java.lang.String" itemvalue="async-timeout" />
+            <item index="36" class="java.lang.String" itemvalue="trio-websocket" />
+            <item index="37" class="java.lang.String" itemvalue="cffi" />
+            <item index="38" class="java.lang.String" itemvalue="numpy" />
+            <item index="39" class="java.lang.String" itemvalue="pyasn1" />
+            <item index="40" class="java.lang.String" itemvalue="requests" />
+            <item index="41" class="java.lang.String" itemvalue="Jinja2" />
+            <item index="42" class="java.lang.String" itemvalue="sniffio" />
+            <item index="43" class="java.lang.String" itemvalue="mkl-fft" />
+            <item index="44" class="java.lang.String" itemvalue="requests-oauthlib" />
+            <item index="45" class="java.lang.String" itemvalue="exceptiongroup" />
+            <item index="46" class="java.lang.String" itemvalue="selenium" />
+            <item index="47" class="java.lang.String" itemvalue="pyOpenSSL" />
+            <item index="48" class="java.lang.String" itemvalue="tenacity" />
+            <item index="49" class="java.lang.String" itemvalue="urllib3" />
+            <item index="50" class="java.lang.String" itemvalue="itsdangerous" />
+            <item index="51" class="java.lang.String" itemvalue="outcome" />
+            <item index="52" class="java.lang.String" itemvalue="Flask" />
+            <item index="53" class="java.lang.String" itemvalue="blinker" />
+            <item index="54" class="java.lang.String" itemvalue="pyu2f" />
+            <item index="55" class="java.lang.String" itemvalue="six" />
+            <item index="56" class="java.lang.String" itemvalue="google-auth-oauthlib" />
+            <item index="57" class="java.lang.String" itemvalue="chromedriver-autoinstaller" />
+            <item index="58" class="java.lang.String" itemvalue="packaging" />
+            <item index="59" class="java.lang.String" itemvalue="plotly" />
+            <item index="60" class="java.lang.String" itemvalue="Flask-Compress" />
+            <item index="61" class="java.lang.String" itemvalue="sortedcontainers" />
+            <item index="62" class="java.lang.String" itemvalue="pandas" />
+            <item index="63" class="java.lang.String" itemvalue="tqdm" />
+            <item index="64" class="java.lang.String" itemvalue="typing_extensions" />
+            <item index="65" class="java.lang.String" itemvalue="cachetools" />
+            <item index="66" class="java.lang.String" itemvalue="aiohttp" />
+            <item index="67" class="java.lang.String" itemvalue="multidict" />
+            <item index="68" class="java.lang.String" itemvalue="yarl" />
+            <item index="69" class="java.lang.String" itemvalue="pytz" />
+            <item index="70" class="java.lang.String" itemvalue="aiosignal" />
+            <item index="71" class="java.lang.String" itemvalue="google-auth" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N812" />
+          <option value="N803" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="list.to_sql" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
