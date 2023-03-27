@@ -1,4 +1,4 @@
-# ZwiftPower Data
+# ZwiftPowerData
 A python class that allows you to pull race event and GC standings data from ZwiftPower.<br>I do not work for and am not affliated Zwift, ZwiftPower or any of its affliates and assume no liability.
 
 ## Cloning the Repo and Setup
