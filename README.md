@@ -56,6 +56,6 @@ from ZwiftPowerData import ZwiftPower
 
 
 session = ZwiftPower(username='zwift_email', password='zwift_password').session
-# make whatever request you want
+# make whatever request you want to zwiftpower.com
 resp = session.get(...)
 ```
