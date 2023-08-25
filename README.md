@@ -5,7 +5,7 @@ A python class that allows you to pull race event and GC standings data from Zwi
 1. Create a virtual environment: `conda create -n py_zp python=3.10`
 2. Change directory to site-packages: `cd ~/opt/anaconda3/envs/py_zp/lib/python3.10/site-packages`
 3. Clone the repo: `git clone https://github.com/ckoutavas/ZwiftPowerData`
-4. Change directory to GoogleAnalytics4: `cd ZwiftPowerdata`
+4. Change directory to ZwiftPowerdata: `cd ZwiftPowerdata`
 5. Activate your new environment: `conda activate py_zp`
 6. Install requirements.txt: `pip install -r requirements.txt`
 
