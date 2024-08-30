@@ -33,7 +33,7 @@ from ZwiftPowerData import ZwiftPower
 
 
 zp = ZwiftPower(username='zwift_email', password='zwift_password')
-events_df = zp.league_gc_results(league_id='1234')
+events_df = zp.league_event_results(league_id='1234')
 ```
 
 ## team_roster
